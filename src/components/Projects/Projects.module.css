@@ -1,37 +1,50 @@
 .container {
-  background-color: rgba(15, 15, 15, 0.8);
+  background-color: rgba(25, 25, 50, 0.85);
   padding: 80px 20px;
   overflow: hidden;
+  backdrop-filter: blur(14px);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 }
 
 .title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #20c997;
+  font-size: 2.6rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #6A8CFF, #A17CFE, #E59CFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
 }
 
 .controls {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
+  gap: 14px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 
 .controls button {
-  padding: 10px 20px;
-  background: #1abc9c;
+  padding: 12px 26px;
+  background: linear-gradient(135deg, #A17CFE, #E59CFF);
   border: none;
-  border-radius: 5px;
-  color: #fff;
-  font-weight: bold;
+  border-radius: 50px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 16px rgba(150, 100, 255, 0.25);
+  backdrop-filter: blur(6px);
 }
 
 .controls button:hover {
-  background: #16a085;
+  background: linear-gradient(135deg, #BD85FF, #A17CFE);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(180, 110, 250, 0.4);
 }
 
 .carousel {
@@ -39,12 +52,25 @@
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  gap: 20px;
-  padding-bottom: 20px;
+  gap: 24px;
+  padding-bottom: 30px;
+  padding-left: 10px;
 }
 
 .cardWrapper {
   flex: 0 0 auto;
   scroll-snap-align: center;
   width: 345px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(160, 120, 255, 0.25);
+  border-radius: 16px;
+  padding: 24px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardWrapper:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(200, 140, 255, 0.35);
 }

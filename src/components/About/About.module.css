@@ -1,5 +1,5 @@
 .container {
-  background-color: rgba(15, 15, 15, 0.8);
+  background-color: rgba(15, 15, 30, 0.85);
   padding: 100px 0;
   position: relative;
   overflow: hidden;
@@ -13,11 +13,10 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, rgba(32, 201, 151, 0.1) 0%, rgba(32, 201, 151, 0) 100%);
+  background: linear-gradient(45deg, rgba(106, 90, 205, 0.1) 0%, rgba(138, 43, 226, 0) 100%);
   z-index: 0;
 }
 
-/* Additional animated background elements */
 .container::after {
   content: '';
   position: absolute;
@@ -25,7 +24,7 @@
   right: 10%;
   width: 200px;
   height: 200px;
-  background: radial-gradient(circle, rgba(32, 201, 151, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(106, 90, 205, 0.1) 0%, transparent 70%);
   border-radius: 50%;
   animation: float 6s ease-in-out infinite;
   z-index: 0;
@@ -51,7 +50,7 @@
 
 .title {
   font-size: 3rem;
-  color: #20c997;
+  color: #6a5acd;
   margin-bottom: 30px;
   position: relative;
   display: inline-block;
@@ -65,10 +64,10 @@
   left: 50%;
   width: 80px;
   height: 4px;
-  background: linear-gradient(90deg, #20c997, #17a2b8);
+  background: linear-gradient(90deg, #6a5acd, #8a2be2);
   transform: translateX(-50%);
   border-radius: 2px;
-  box-shadow: 0 2px 10px rgba(32, 201, 151, 0.5);
+  box-shadow: 0 2px 10px rgba(106, 90, 205, 0.5);
 }
 
 .description {
@@ -95,7 +94,7 @@
   transition: all 0.3s ease;
   display: flex;
   align-items: flex-start;
-  border: 1px solid rgba(32, 201, 151, 0.1);
+  border: 1px solid rgba(106, 90, 205, 0.1);
   backdrop-filter: blur(10px);
   position: relative;
   cursor: pointer;
@@ -108,7 +107,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(32, 201, 151, 0.05) 0%, rgba(32, 201, 151, 0.02) 100%);
+  background: linear-gradient(135deg, rgba(106, 90, 205, 0.05) 0%, rgba(138, 43, 226, 0.02) 100%);
   border-radius: 15px;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -121,7 +120,7 @@
 
 .skillIcon {
   font-size: 2.8rem;
-  color: #20c997;
+  color: #6a5acd;
   margin-right: 25px;
   min-width: 70px;
   text-align: center;
@@ -147,13 +146,12 @@
   font-weight: 300;
 }
 
-/* Hover effects enhancement */
 .skillItem:hover {
-  border-color: rgba(32, 201, 151, 0.3);
+  border-color: rgba(138, 43, 226, 0.3);
 }
 
 .skillItem:hover .skillText h3 {
-  color: #20c997;
+  color: #6a5acd;
 }
 
 /* Responsive Design */
@@ -161,7 +159,7 @@
   .skills {
     gap: 25px;
   }
-  
+
   .skillItem {
     flex-basis: calc(50% - 15px);
   }
@@ -171,24 +169,24 @@
   .container {
     padding: 60px 0;
   }
-  
+
   .title {
     font-size: 2.5rem;
   }
-  
+
   .description {
     font-size: 1.1rem;
   }
-  
+
   .skills {
     flex-direction: column;
   }
-  
+
   .skillItem {
     flex-basis: 100%;
     padding: 30px;
   }
-  
+
   .skillIcon {
     font-size: 2.5rem;
     margin-right: 20px;
@@ -200,29 +198,28 @@
   .container {
     padding: 40px 0;
   }
-  
+
   .title {
     font-size: 2rem;
   }
-  
+
   .description {
     font-size: 1rem;
     padding: 0 10px;
   }
-  
+
   .skillItem {
     padding: 25px;
     flex-direction: column;
     text-align: center;
   }
-  
+
   .skillIcon {
     margin-right: 0;
     margin-bottom: 20px;
   }
 }
 
-/* Enhanced animations for modern feel */
 @keyframes shimmer {
   0% {
     background-position: -200% 0;
@@ -233,7 +230,7 @@
 }
 
 .title:hover {
-  background: linear-gradient(90deg, #20c997, #ffffff, #20c997);
+  background: linear-gradient(90deg, #6a5acd, #ffffff, #8a2be2);
   background-size: 200% 100%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -241,10 +238,9 @@
   animation: shimmer 2s infinite;
 }
 
-/* Subtle glow effects */
 .skillItem:hover {
   box-shadow: 
     0 10px 30px rgba(0, 0, 0, 0.3),
-    0 0 20px rgba(32, 201, 151, 0.1),
+    0 0 20px rgba(106, 90, 205, 0.15),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }

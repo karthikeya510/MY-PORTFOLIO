@@ -1,5 +1,5 @@
 .container {
-  background-color: #080d0d;
+  background-color: #0a0a1a; /* Deep bluish black */
   color: #ffffff;
   padding: 50px 20px;
   width: 100%;
@@ -9,16 +9,20 @@
   max-width: 1000px;
   margin: 0 auto;
   padding: 40px 30px;
-  background: rgba(28, 101, 84, 0.04);
+  background: rgba(160, 120, 255, 0.05); /* Light violet glassmorphic base */
   border-radius: 26px;
-  box-shadow: 0 0 40px rgba(2, 250, 175, 0.08);
+  box-shadow: 0 0 40px rgba(160, 120, 255, 0.08); /* Subtle purple glow */
   text-align: center;
+  backdrop-filter: blur(10px);
 }
 
 .heading {
   font-size: 34px;
   font-weight: 700;
-  color: #3dbe9e;
+  background: linear-gradient(90deg, #6A8CFF, #A17CFE, #E59CFF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
 }
 
@@ -42,20 +46,23 @@
   align-items: center;
   gap: 10px;
   font-size: 16px;
-  background-color: rgba(32, 201, 151, 0.08);
+  background-color: rgba(160, 120, 255, 0.08);
   padding: 10px 16px;
-  border-radius: 10px;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  border-radius: 12px;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 12px rgba(160, 120, 255, 0.12);
+  backdrop-filter: blur(6px);
 }
 
 .link:hover {
   transform: translateY(-2px);
-  background-color: rgba(32, 201, 151, 0.15);
+  background-color: rgba(200, 140, 255, 0.15);
+  box-shadow: 0 0 18px rgba(200, 140, 255, 0.35);
 }
 
 .icon {
   font-size: 20px;
-  color: #20c997;
+  color: #A17CFE;
 }
 
 .link a {
@@ -66,7 +73,7 @@
 }
 
 .link a:hover {
-  color: #20c997;
+  color: #D66DFF;
 }
 
 .copyright {

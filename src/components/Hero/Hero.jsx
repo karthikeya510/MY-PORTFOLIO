@@ -55,7 +55,7 @@ export const Hero = () => {
         }
 
         ctx.globalAlpha = particle.opacity;
-        ctx.fillStyle = '#20c997';
+        ctx.fillStyle = 'rgb(76, 165, 228)';
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2);
         ctx.fill();
@@ -66,7 +66,7 @@ export const Hero = () => {
           );
           if (distance < 100) {
             ctx.globalAlpha = (100 - distance) / 100 * 0.1;
-            ctx.strokeStyle = '#20c997';
+            ctx.strokeStyle = 'rgb(76, 165, 228)';
             ctx.lineWidth = 1;
             ctx.beginPath();
             ctx.moveTo(particle.x, particle.y);
@@ -103,8 +103,12 @@ export const Hero = () => {
       ease: "power3.out"
     })
     .to(titleRef.current, {
-      backgroundImage: "linear-gradient(45deg, #ffffff, #20c997, #17a589, #ffffff)",
-      backgroundSize: "300% 300%",
+      onStart: () => {
+        titleRef.current.style.backgroundImage = "linear-gradient(90deg,rgb(76, 165, 228), #7F5AF0, #D66DFF)";
+        titleRef.current.style.backgroundSize = "300% 300%";
+        titleRef.current.style.WebkitBackgroundClip = "text";
+        titleRef.current.style.WebkitTextFillColor = "transparent";
+      },
       duration: 0.1,
       ease: "none"
     }, "-=0.5")
@@ -174,7 +178,7 @@ export const Hero = () => {
         gsap.to(icon, {
           scale: 1.2,
           rotation: 15,
-          textShadow: "0 0 20px #20c997",
+          textShadow: "0 0 20pxrgb(93, 104, 229)",
           duration: 0.3,
           ease: "back.out(1.7)"
         });
@@ -196,7 +200,7 @@ export const Hero = () => {
       button.addEventListener('mouseenter', () => {
         gsap.to(button, {
           scale: 1.1,
-          boxShadow: "0 10px 30px rgba(32, 201, 151, 0.4)",
+          boxShadow: "0 10px 30px rgba(23, 67, 198, 0.4)",
           duration: 0.3,
           ease: "power2.out"
         });
@@ -271,7 +275,7 @@ export const Hero = () => {
         </div>
       </div>
       <img 
-        src={getImageUrl("hero/karthik.jpg")} 
+        src={getImageUrl("hero/karthik.png")} 
         alt="Hero image" 
         className={styles.heroImg} 
         ref={heroImgRef}
