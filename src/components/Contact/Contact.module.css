@@ -1,0 +1,76 @@
+.container {
+  background-color: #080d0d;
+  color: #ffffff;
+  padding: 50px 20px;
+  width: 100%;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  background: rgba(28, 101, 84, 0.04);
+  border-radius: 26px;
+  box-shadow: 0 0 40px rgba(2, 250, 175, 0.08);
+  text-align: center;
+}
+
+.heading {
+  font-size: 34px;
+  font-weight: 700;
+  color: #badf40;
+  margin-bottom: 10px;
+}
+
+.subtext {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 30px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  background-color: rgba(32, 201, 151, 0.08);
+  padding: 10px 16px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.link:hover {
+  transform: translateY(-2px);
+  background-color: rgba(32, 201, 151, 0.15);
+}
+
+.icon {
+  font-size: 20px;
+  color: #20c997;
+}
+
+.link a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.link a:hover {
+  color: #20c997;
+}
+
+.copyright {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.65);
+  margin-top: 10px;
+}
