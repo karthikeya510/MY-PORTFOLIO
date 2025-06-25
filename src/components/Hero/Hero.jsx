@@ -274,12 +274,6 @@ export const Hero = () => {
           </a>
         </div>
       </div>
-      <img 
-        src={getImageUrl("hero/karthik.png")} 
-        alt="Hero image" 
-        className={styles.heroImg} 
-        ref={heroImgRef}
-      />
-    </section>
+       </section>
   );
 };
